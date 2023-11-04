@@ -29,7 +29,7 @@ export default function App() {
           {todos.map(({ text, completed }, index) => (
             <div className="item" key={index}>
               <li onClick={() => handleItemDone(index)}>
-                <p style={{ width: "4%" }}>
+                <p className="check-task">
                   {completed ? (
                     <span style={{ marginRight: "10px" }}>✔️</span>
                   ) : (
